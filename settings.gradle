@@ -1,0 +1,12 @@
+rootProject.name = 'guns'
+include 'guns-base-support'
+include 'guns-vip-main'
+include 'guns-base-support:guns-base'
+findProject(':guns-base-support:guns-base')?.name = 'guns-base'
+include 'guns-base-support:guns-base-auth'
+findProject(':guns-base-support:guns-base-auth')?.name = 'guns-base-auth'
+include 'guns-base-support:guns-dbctn'
+findProject(':guns-base-support:guns-dbctn')?.name = 'guns-dbctn'
+include 'guns-base-support:guns-sys'
+findProject(':guns-base-support:guns-sys')?.name = 'guns-sys'
+

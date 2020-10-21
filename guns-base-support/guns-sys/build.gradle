@@ -1,0 +1,11 @@
+dependencies {
+    compile project(':guns-base-support:guns-base')
+    compile project(':guns-base-support:guns-base-auth')
+
+    implementation "org.springframework.boot:spring-boot-starter-security"
+    implementation "io.springfox:springfox-swagger2"
+    implementation "io.springfox:springfox-swagger-ui"
+    implementation "com.github.xiaoymin:swagger-bootstrap-ui:1.9.6"
+    implementation "commons-fileupload:commons-fileupload"
+    implementation("org.hibernate:hibernate-validator:6.1.5.Final")
+}

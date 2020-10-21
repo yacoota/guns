@@ -1,0 +1,13 @@
+def profileName = System.getProperty("profileName") ?: "dev"
+processResources {
+    filter org.apache.tools.ant.filters.ReplaceTokens, tokens: [profileName: profileName]
+}
+
+dependencies {
+    compile project(':guns-base-support:guns-dbctn')
+    compile project(':guns-base-support:guns-sys')
+
+    implementation "org.springframework.boot:spring-boot-starter-quartz"
+    implementation "org.springframework.boot:spring-boot-starter-security"
+    implementation "org.springframework.boot:spring-boot-starter-jta-atomikos"
+}
