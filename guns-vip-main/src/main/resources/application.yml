@@ -3,7 +3,7 @@ server:
   max-http-header-size: 10240
 
 beetl:
-  resource-auto-check: true         #热加载beetl模板，开发时候用
+  resource-auto-check: true
 
 spring:
   profiles:
